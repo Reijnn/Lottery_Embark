@@ -15,22 +15,22 @@ function reset() {
 
 function end() {
     Lottery.methods.getNumberTeams().call(function(err, value) {
-        //console.log(value)
         document.getElementById("teams").value = value
     })
 
+    Lottery.methods.end().call(function(err, value) {
+         document.getElementById("winner").value = value
+     })
+
+    //Deze functie hoort een enkele string te returnen maar ik krijg het niet werkend.
     // Lottery.methods.endLottery().call(function(err, value){
     //     console.log(value)
     //     console.log(err)
     // })
 
-    Lottery.methods.getTeam(0).call(function(err, value){
-        console.log(value)
-        console.log(err)
-    })
-
-    Lottery.methods.end().call(function(err, value) {
-       // console.log(value)
-        document.getElementById("winner").value = value
-    })
+    // Deze functie zou informatie van het desbetreffende team op tehalen, ook deze return niet de juiste data.
+    // Lottery.methods.getTeam(0).call(function(err, value){
+    //     console.log(value)
+    //     console.log(err)
+    // })
 }
