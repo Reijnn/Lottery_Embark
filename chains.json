@@ -1,0 +1,11 @@
+{
+  "0xb6cfeab83614da04c03db0fb8a6787a45d0be8d576fcc6f8f457a5a816d22ab3": {
+    "contracts": {
+      "0x12e7fa5ec980ed7b3c6d1a34739bbc48bc0e37080e2a63d670d7c140d37f23ed": {
+        "name": "Lottery",
+        "address": "0x6281e92920217c1d2f27426ee9b886d1e53405ec"
+      }
+    },
+    "name": "development"
+  }
+}
